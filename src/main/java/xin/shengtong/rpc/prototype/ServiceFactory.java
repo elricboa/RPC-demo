@@ -2,9 +2,6 @@ package xin.shengtong.rpc.prototype;
 
 import java.lang.reflect.Proxy;
 
-/**
- * Created by shentong.zhou on 2017/10/9.
- */
 public class ServiceFactory {
 
     public static <T> T importService(Class<T> serviceInterface, String ip, int port) {
@@ -13,6 +10,7 @@ public class ServiceFactory {
 
     public static void exportService(Object serviceImpl, int port) {
         ServiceProvider serviceProvider = new ServiceProvider(serviceImpl, port);
-
+        serviceProvider.start();
+        System.out.println("server start on:" + port);
     }
 }

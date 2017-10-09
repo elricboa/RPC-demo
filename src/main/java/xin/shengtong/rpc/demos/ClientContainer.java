@@ -2,9 +2,6 @@ package xin.shengtong.rpc.demos;
 
 import xin.shengtong.rpc.prototype.ServiceFactory;
 
-/**
- * Created by shentong.zhou on 2017/10/9.
- */
 public class ClientContainer {
 
     public static void main(String[] args) {

@@ -9,9 +9,6 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.concurrent.atomic.AtomicLong;
 
-/**
- * Created by shentong.zhou on 2017/10/9.
- */
 public class ServiceProvider extends Thread {
 
     private AtomicLong sequenceGenerator;

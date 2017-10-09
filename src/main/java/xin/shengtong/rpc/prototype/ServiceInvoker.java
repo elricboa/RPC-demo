@@ -8,9 +8,6 @@ import java.lang.reflect.Method;
 import java.net.Socket;
 import java.util.concurrent.atomic.AtomicLong;
 
-/**
- * Created by shentong.zhou on 2017/10/9.
- */
 public class ServiceInvoker implements InvocationHandler {
 
     private AtomicLong sequenceGenerator;

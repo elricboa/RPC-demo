@@ -2,9 +2,6 @@ package xin.shengtong.rpc.prototype;
 
 import java.io.Serializable;
 
-/**
- * Created by shentong.zhou on 2017/10/9.
- */
 public class Response implements Serializable {
 
     private long sequence;

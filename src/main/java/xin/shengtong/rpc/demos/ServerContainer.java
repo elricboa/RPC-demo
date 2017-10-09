@@ -2,13 +2,13 @@ package xin.shengtong.rpc.demos;
 
 import xin.shengtong.rpc.prototype.ServiceFactory;
 
-/**
- * Created by shentong.zhou on 2017/10/9.
- */
+import java.io.IOException;
+
 public class ServerContainer {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         EchoService echoService = new EchoServiceImpl();
-        String message = ServiceFactory.exportService(echoService, 2048);
+        ServiceFactory.exportService(echoService, 2048);
+        System.in.read();
     }
 }
